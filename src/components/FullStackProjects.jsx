@@ -53,13 +53,25 @@ const FullStackProjects = ({ projects }) => {
             <div className={`flex flex-col lg:flex-row justify-between gap-5`}>
               <div className="h-[30vh] flex-[.4] mx-auto">
                 {index == 0 ? (
-                  <img
-                    className="h-full border min-w-[90%] lg:w-[27vw]
+                  <>
+                    {!isVideoLoaded && (
+                      <Skeleton
+                        variant="rectangular"
+                        height={200}
+                        width={300}
+                      />
+                    )}
+                    <img
+                      onLoad={() => {
+                        setIsVideoLoaded(true);
+                      }}
+                      className="h-full border min-w-[90%] lg:w-[27vw]
                     shadow-md shadow-black rounded-md object-fill dark:shadow-white"
-                    src={project.video}
-                    key={index}
-                    alt=""
-                  />
+                      src={project.video}
+                      key={index}
+                      alt=""
+                    />
+                  </>
                 ) : (
                   <>
                     {!isVideoLoaded && (
