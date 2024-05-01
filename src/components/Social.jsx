@@ -6,8 +6,10 @@ const Social = () => {
   const { setIsHovered } = useHover();
 
   return (
-    <div className=" dark:text-white text-black fixed top-[55%] 
-    md:top-[70%] translate-y-full left-1 text-xs md:text-sm origin-top-left -rotate-90 flex  items-center">
+    <div
+      className=" dark:text-white text-black fixed top-[55%] 
+    md:top-[70%] translate-y-full left-1 text-xs md:text-sm origin-top-left -rotate-90 flex  items-center z-50"
+    >
       <span>Follow Me</span>
       <div className="h-[.4vmin] w-[3.5vmax] bg-black dark:bg-white mx-5"></div>
       <Link

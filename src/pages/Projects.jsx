@@ -15,7 +15,7 @@ const Projects = () => {
       <div
         id="projects"
         ref={projectRef}
-        className="w-screen min-h-screen px-16 dark:bg-inherit bg-white dark:text-white text-inherit pt-10"
+        className="w-screen min-h-screen px-4 dark:bg-inherit bg-white dark:text-white text-inherit pt-10"
       >
         <span
           id="title-project"

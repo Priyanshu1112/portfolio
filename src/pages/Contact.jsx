@@ -113,13 +113,13 @@ function Contact() {
       <div
         id="contact"
         ref={contactRef}
-        className="w-screen min-h-screen px-16 dark:bg-inherit bg-white dark:text-white text-inherit pt-10"
+        className="w-screen min-h-screen dark:bg-inherit bg-white dark:text-white text-inherit pt-10"
       >
         <span
           id="title-contact"
           className="lg:text-6xl w-[0%] opacity-0 overflow-hidden 
-          whitespace-nowrap md:text-4xl text-center md:text-start pb-3 text-3xl 
-          mx-auto md:mx-0 md:pb-5 border-b dark:border-b-2 border-black 
+          whitespace-nowrap md:text-4xl text-center md:text-start pb-3 text-3xl mx-auto 
+          md:mx-0 md:pb-5 border-b dark:border-b-2 border-black 
           dark:border-inherit block
            pt-5 md:pt-10 lg:pt-20"
         >
@@ -163,7 +163,7 @@ function Contact() {
             </span>
             <p
               className="contact-text translate-y-[100px] sm:-translate-x-[100px] 
-            opacity-0"
+            opacity-0 px-10"
             >
               Your feedback is invaluable to me, and I welcome any insights you
               may have. Should you wish to engage in discussions regarding

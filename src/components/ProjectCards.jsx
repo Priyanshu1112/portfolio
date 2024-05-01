@@ -38,7 +38,7 @@ const ProjectCards = ({ projects }) => {
   return (
     <div
       ref={cardContainer}
-      className="flex flex-wrap w-full gap-3 items justify-center  lg:gap-5 flex-col sm:flex-row mt-5 items-center lg:px-8"
+      className="flex flex-wrap w-full gap-3 items justify-center px-4  lg:gap-5 flex-col sm:flex-row mt-5 items-center lg:px-8"
     >
       {projects.map((project, index) => {
         return (
@@ -52,8 +52,7 @@ const ProjectCards = ({ projects }) => {
             dark:shadow rounded-lg relative group/card "
           >
             <h3 className="mb-3 text-center lg:text-start">{project.name}</h3>
-            <div 
-            className="flex flex-col justify-between flex-1 items-center gap-3">
+            <div className="flex flex-col justify-between flex-1 items-center gap-3">
               {!isVideoLoaded && (
                 <Skeleton variant="rectangular" height={200} width={300} />
               )}
