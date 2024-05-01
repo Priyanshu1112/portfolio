@@ -12,7 +12,7 @@ function About() {
       <div
         id="about"
         ref={aboutRef}
-        className="w-screen min-h-screen px-16 dark:bg-inherit bg-white dark:text-white text-inherit pt-10"
+        className="w-screen min-h-screen px-4 dark:bg-inherit bg-white dark:text-white text-inherit pt-10"
       >
         <span
           id="title-about"
@@ -87,7 +87,7 @@ function About() {
                     />
                   </div>
                   <span
-                    className="bg-slate-300 dark:bg-slate-700 dark:text-white block 
+                    className="bg-slate-300 text-xs dark:bg-slate-700 dark:text-white block 
                   rounded-md p-2 text-center"
                   >
                     {key}
@@ -123,7 +123,7 @@ function About() {
           </span>
         </div>
         {/* EDUCATION */}
-        <div className=" flex flex-col items-center sm:items-start sm:flex-row border-t-2 gap-2 pt-8 sm:pt-12 lg:pt-16 w-[90%] mx-auto ">
+        <div className=" flex flex-col items-center sm:items-start sm:flex-row border-t-2 gap-2 pt-8 sm:pt-12 lg:pt-16 w-full ">
           <span
             className="left-about flex-[.45]  text-2xl 
           opacity-0 translate-y-[100px] sm:-translate-x-[100px] font-semibold"
