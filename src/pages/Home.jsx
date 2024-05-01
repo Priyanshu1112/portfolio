@@ -32,10 +32,11 @@ function Home() {
         stagger: 0.1,
         duration: 1,
         x: "0px",
-      }).to(document.getElementById('resume-button'),{
+      })
+      .to(document.getElementById("resume-button"), {
         opacity: 1,
-        y: '0px',
-        duration: 1
+        y: "0px",
+        duration: 1,
       });
 
     timeline.play();
@@ -84,7 +85,7 @@ function Home() {
             experiences to life.
           </span>
           <div className="flex gap-10 mt-5">
-            <div className="group/button button relative">
+            <div className="group/button button -translate-x-[100px] relative">
               <div
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
@@ -112,7 +113,7 @@ function Home() {
                 </>
               )}
             </div>
-            <div className="group/button button relative">
+            <div className="group/button button translate-x-[100px] relative">
               <div
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
@@ -168,15 +169,15 @@ function Home() {
           <div
             className="w-[95%]  top-1/2 left-1/2 
           -translate-x-1/2 -translate-y-1/2 absolute flex-col justify-center 
-          items-center text-white gap-4 flex md:hidden"
+          items-center text-white gap-3 flex md:hidden"
           >
             <span
-              className={`font-bold bg-[rgba(0,0,0,.5)] p-1 text dark:text-white text-5xl`}
+              className={`font-bold bg-[rgba(0,0,0,.5)] p-1 text dark:text-white text-2xl`}
             >
               Welcome
             </span>
             <TypeAnimation
-              className="text bg-[rgba(0,0,0,.5)] text-sm"
+              className="text bg-[rgba(0,0,0,.5)] text-xs text-center"
               sequence={[
                 "I like to code.",
                 1000,
@@ -191,17 +192,17 @@ function Home() {
               speed={50}
               repeat={Infinity}
             />
-            <span className="block bg-[rgba(0,0,0,.5)]  text w-[70%] text-center text-base">
+            <span className="block bg-[rgba(0,0,0,.5)]  text w-[90%] text-center text-sm">
               I&apos;m a proficient MERN stack developer, excelling in crafting
               websites with versatility across various frameworks and libraries.
               With expertise in HTML, CSS, and JavaScript, I bring dynamic and
               engaging digital experiences to life.
             </span>
-            <div className="flex flex-col gap-10 mt-5 text-base">
+            <div className="flex flex-col gap-5 mt-5 text-base">
               <div className="group/button button -translate-x-[100px] relative">
                 <div
                   role="button"
-                  className="px-5 py-1 border-2  bg-white text-black relative z-20"
+                  className="px-3 text-sm py-1 border-2  bg-white text-black relative z-20"
                 >
                   <ScrollLink
                     containerId="containerElement"
@@ -220,9 +221,9 @@ function Home() {
               <div className="group/button button translate-x-[100px] relative">
                 <div
                   role="button"
-                  className="dark:bg-inherit relative z-20 border-2 border-border-2 dark:group-hover/button:border-black"
+                  className="dark:bg-inherit relative z-20 border-2 text-sm border-border-2 dark:group-hover/button:border-black"
                 >
-                  <div className="px-5 py-1 dark:text-white relative z-40 ">
+                  <div className="px-4 py-1 dark:text-white relative z-40 ">
                     <ScrollLink
                       containerId="containerElement"
                       onMouseEnter={() => setIsHovered(true)}
@@ -239,12 +240,15 @@ function Home() {
                   </div>
                 </div>
               </div>
-              <div id="resume-button" className="group/button opacity-0 translate-y-[100px] relative">
+              <div
+                id="resume-button"
+                className="group/button opacity-0 translate-y-[100px] relative"
+              >
                 <a
                   href="/PriyanshuResume.pdf"
                   role="link"
                   download="Priyanshu_Resume.pdf"
-                  className="dark:bg-inherit relative px-5 py-1 z-20 border-2 border-border-2 dark:group-hover/button:border-black"
+                  className="dark:bg-inherit relative text-sm px-5 py-1 z-20 border-2 border-border-2 dark:group-hover/button:border-black"
                 >
                   Resume <Download />
                 </a>

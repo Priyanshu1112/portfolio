@@ -113,7 +113,8 @@ function Contact() {
       <div
         id="contact"
         ref={contactRef}
-        className="w-screen min-h-screen dark:bg-inherit bg-white dark:text-white text-inherit pt-10"
+        className="w-screen min-h-screen dark:bg-inherit bg-white md:pl-8
+         dark:text-white text-inherit pt-10 text-sm lg:text-base"
       >
         <span
           id="title-contact"
@@ -126,7 +127,7 @@ function Contact() {
           Let&apos;s Connects
         </span>
         <div
-          className="md:px-8 flex flex-col items-center md:items-start 
+          className="md:pr-4 flex flex-col items-center md:items-start 
           md:flex-row gap-10 md:gap-5  py-5 md:mt-8"
         >
           <div
@@ -135,25 +136,28 @@ function Contact() {
           >
             <p
               className="text-2xl contact-text translate-y-[100px] 
-            sm:-translate-x-[100px] opacity-0 lg:text-3xl mb-2"
+            sm:-translate-x-[100px] opacity-0 lg:text-3xl mb-2 md:px-10"
             >
               Connect or Feedback
             </p>
             <span>
               <Link
                 className="contact-text translate-y-[100px] sm:-translate-x-[100px] 
-              opacity-0"
+              opacity-0 md:px-10"
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
                 to="mailto:raghuwanshi.priyanshu1112@gmail.com"
               >
-                Email : <u>raghuwanshi.priyanshu1112@gmail.com</u>
+                Email :{" "}
+                <u className="md:text-xs lg:text-sm">
+                  raghuwanshi.priyanshu1112@gmail.com
+                </u>
               </Link>
             </span>
             <span>
               <Link
                 className="contact-text translate-y-[100px] sm:-translate-x-[100px] 
-              opacity-0"
+              opacity-0 md:px-10"
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
                 to="tel:+918102596476"
@@ -173,8 +177,11 @@ function Contact() {
             </p>
           </div>
           {/* FORM */}
-          <div id="contact-form-container" className="flex-1 w-full">
-            <div className="flex gap-3 flex-col sm:flex-row mb-5 lg:mb-10">
+          <div
+            id="contact-form-container"
+            className="flex-1 w-full px-7 md:px-0"
+          >
+            <div className="flex gap-1 lg:gap-3 flex-col sm:flex-row mb-5 lg:mb-10">
               <span className="w-full block">
                 <input
                   name="from_name"
