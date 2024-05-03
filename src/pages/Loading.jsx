@@ -16,7 +16,7 @@ const Loading = () => {
 
   return (
     <div className="bg-slate-950 text-white h-screen w-screen flex items-center justify-center text-2xl">
-      <span className="grid grid-cols-2 items-center gap-3  w-full justify-center">
+      <span className="grid grid-cols-2 items-center gap-3 bg-slate-600 justify-center">
         <img src="/logo.png" className="h-[6vmax] ml-auto" />
         <TextTransition springConfig={presets.wobbly}>
           {TEXTS[index % TEXTS.length]}
