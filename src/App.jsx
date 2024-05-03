@@ -53,11 +53,17 @@ const App = () => {
   }, [containerRef, prevScroll]);
 
   useEffect(() => {
-    window.addEventListener("load", () => {
-      setTimeout(() => {
-        setLoading(false);
-      }, 2000);
-    });
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  }, []);
+
+  useEffect(() => {
+    // window.addEventListener("load", () => {
+    // setTimeout(() => {
+    //   setLoading(false);
+    // }, 2000);
+    // });
 
     // Registering the 'begin' event and logging it to the console when triggered.
     Events.scrollEvent.register("begin", (to, element) => {
@@ -151,7 +157,7 @@ const App = () => {
     };
   }, [containerRef, loading]);
 
-  if (loading) return <Loading loading={loading} />;
+  if (loading) return <Loading />;
 
   return (
     <div
