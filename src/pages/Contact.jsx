@@ -179,7 +179,7 @@ function Contact() {
           {/* FORM */}
           <div
             id="contact-form-container"
-            className="flex-1 w-full px-7 md:px-0"
+            className="flex-1 w-full px-7 md:px-0 md:pr-4"
           >
             <div className="flex gap-1 lg:gap-3 flex-col sm:flex-row mb-5 lg:mb-10">
               <span className="w-full block">

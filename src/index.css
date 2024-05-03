@@ -52,3 +52,38 @@ body {
 /* .button:last-child {
   transform: translateX(100px);
 } */
+
+.rotate {
+  animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg); /* Corrected to 'transform: rotate()' */
+  }
+  100% {
+    transform: rotate(360deg); /* Corrected to 'transform: rotate()' */
+  }
+}
+
+.animate {
+  animation: loading 3s ease-in-out infinite;
+}
+
+@keyframes loading {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  85% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+}

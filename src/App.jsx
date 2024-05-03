@@ -9,6 +9,7 @@ import { Events, scrollSpy } from "react-scroll";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Loading from "./pages/Loading";
 
 const App = () => {
   const navigate = useNavigate();
@@ -17,6 +18,8 @@ const App = () => {
   const [showNav, setShowNav] = useState(false);
   const [prevScroll, setPrevScroll] = useState(0);
   const [isTouch, setIsTouch] = useState(false);
+  const [loading, setLoading] = useState(true);
+
   // const { homeRef, projectRef, aboutRef, contactRef } = useElementRef();
   // const { search } = useLocation();
 
@@ -50,6 +53,12 @@ const App = () => {
   }, [containerRef, prevScroll]);
 
   useEffect(() => {
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        setLoading(false);
+      }, 2000);
+    });
+
     // Registering the 'begin' event and logging it to the console when triggered.
     Events.scrollEvent.register("begin", (to, element) => {
       console.log("begin", to, element);
@@ -128,19 +137,21 @@ const App = () => {
       setCursorPosition({ x: clientX, y: clientY });
     };
 
-    document
-      .getElementById("containerElement")
-      .addEventListener("mousemove", moveCursor);
+    // document
+    //   .getElementById("containerElement")
+    containerRef.current?.addEventListener("mousemove", moveCursor);
 
     setIsTouch(window.matchMedia("(pointer: coarse)").matches);
     navigate("/");
 
     return () => {
-      document
-        .getElementById("containerElement")
-        .removeEventListener("mousemove", moveCursor);
+      // document
+      //   .getElementById("containerElement")
+      containerRef.current?.removeEventListener("mousemove", moveCursor);
     };
-  }, []);
+  }, [containerRef, loading]);
+
+  if (loading) return <Loading loading={loading} />;
 
   return (
     <div
