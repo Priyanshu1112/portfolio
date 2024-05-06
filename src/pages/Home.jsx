@@ -245,7 +245,7 @@ function Home() {
                 className="group/button opacity-0 translate-y-[100px] relative"
               >
                 <a
-                  href="/PriyanshuResume.pdf"
+                  href="/Priyanshu_Resume.pdf"
                   role="link"
                   download="Priyanshu_Resume.pdf"
                   className="dark:bg-inherit relative text-sm px-5 py-1 z-20 border-2 border-border-2 dark:group-hover/button:border-black"
