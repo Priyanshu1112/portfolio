@@ -99,7 +99,7 @@ function Navbar({ show }) {
               <a
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
-                href="/PriyanshuResume.pdf"
+                href="/Priyanshu_Resume.pdf"
                 download="Priyanshu_Resume.pdf"
                 className="text-xs md:text-sm lg:text-base hidden md:inline ml-3 bg-gray-300 dark:bg-inherit border  px-2 py-2 rounded-md hover:bg-gray-200 transition-all duration-300"
               >
