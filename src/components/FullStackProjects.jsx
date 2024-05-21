@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useHover } from "../utils/HoverState";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const FullStackProjects = ({ projects }) => {
   const { setIsHovered } = useHover();
@@ -26,6 +26,10 @@ const FullStackProjects = ({ projects }) => {
       });
     });
   }, []);
+
+  useEffect(() => {
+    console.log({ isVideoLoaded });
+  }, [isVideoLoaded]);
 
   return (
     <div
