@@ -1,7 +1,7 @@
 export const fullstack = [
   {
     title: "Car-Dealership",
-    video: "/fullstack/car-dealership.png",
+    video: "/fullstack/car-dealership.mp4",
 
     features: [
       "Secure Messaging: Enables negotiation and chat with dealers.",

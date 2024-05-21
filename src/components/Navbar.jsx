@@ -34,14 +34,6 @@ function Navbar({ show }) {
       } else main.classList?.remove("dark");
   }, [isDark, main]);
 
-  // Function to handle the activation of a link.
-  // const handleSetActive = (to) => {
-  //   console.log(to);
-  // };
-
-  // ${
-  //   !menuOpen && "shadow-md"
-  // }
   return (
     <div className="relative z-[9997]">
       <nav
@@ -53,14 +45,6 @@ function Navbar({ show }) {
         show ? "-translate-y-full" : "translate-y-0"
       }`}
       >
-        {/* <Link
-          onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
-          to="/"
-          className={`font-bold dark:text-white hover:cursor-pointer text-md sm:text-lg md:text-2xl `}
-        >
-          Priyanshu
-        </Link> */}
         <ScrollLink
           containerId="containerElement"
           onMouseEnter={() => setIsHovered(true)}

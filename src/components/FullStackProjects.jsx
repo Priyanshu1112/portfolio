@@ -52,52 +52,24 @@ const FullStackProjects = ({ projects }) => {
             </h3>
             <div className={`flex flex-col lg:flex-row justify-between gap-5`}>
               <div className="h-[30vh] flex-[.4] mx-auto">
-                {index == 0 ? (
-                  <>
-                    {!isVideoLoaded && (
-                      <Skeleton
-                        variant="rectangular"
-                        height={200}
-                        width={300}
-                      />
-                    )}
-                    <img
-                      onLoad={() => {
-                        setIsVideoLoaded(true);
-                      }}
-                      className="h-full border min-w-[90%] lg:w-[27vw]
-                    shadow-md shadow-black rounded-md object-fill dark:shadow-white"
-                      src={project.video}
-                      key={index}
-                      alt=""
-                    />
-                  </>
-                ) : (
-                  <>
-                    {!isVideoLoaded && (
-                      <Skeleton
-                        variant="rectangular"
-                        height={200}
-                        width={300}
-                      />
-                    )}
-                    <video
-                      className={`h-full min-w-[90%] lg:w-[27vw] border 
+                {!isVideoLoaded && (
+                  <Skeleton variant="rectangular" height={200} width={300} />
+                )}
+                <video
+                  className={`h-full min-w-[90%] lg:w-[27vw] border 
                     shadow-md shadow-black rounded-md object-fill
                     dark:shadow-white ${
                       isVideoLoaded ? "inline-block" : "hidden"
                     }`}
-                      src={project.video}
-                      key={index}
-                      autoPlay
-                      loop
-                      muted
-                      onLoadedMetadata={() => {
-                        setIsVideoLoaded(true);
-                      }}
-                    ></video>
-                  </>
-                )}
+                  src={project.video}
+                  key={index}
+                  autoPlay
+                  loop
+                  muted
+                  onLoadedMetadata={() => {
+                    setIsVideoLoaded(true);
+                  }}
+                ></video>
               </div>
               <div className="flex-[.6] flex flex-col">
                 <p>
