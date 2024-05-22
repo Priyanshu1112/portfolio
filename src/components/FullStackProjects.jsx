@@ -70,7 +70,7 @@ const FullStackProjects = ({ projects }) => {
                   autoPlay
                   loop
                   muted
-                  onLoadedMetadata={() => {
+                  onCanPlay={() => {
                     setIsVideoLoaded(true);
                   }}
                 ></video>

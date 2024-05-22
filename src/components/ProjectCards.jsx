@@ -66,7 +66,7 @@ const ProjectCards = ({ projects }) => {
                   isVideoLoaded ? "block" : "hidden"
                 } h-[30vmin] w-[30vw] mx-auto lg:w-[25vmax] border 
                 shadow-md shadow-black rounded-md object-fill`}
-                onLoadedData={() => {
+                onCanPlay={() => {
                   setIsVideoLoaded(true);
                 }}
               />
