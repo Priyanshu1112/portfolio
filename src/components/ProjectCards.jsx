@@ -64,7 +64,7 @@ const ProjectCards = ({ projects }) => {
                 muted
                 className={`${
                   isVideoLoaded ? "block" : "hidden"
-                } h-[30vmin] w-[30vw] mx-auto lg:w-[25vmax] border 
+                } lg:h-[30vmin] h-[45vmin] w-[90%] mx-auto lg:w-[25vmax] border 
                 shadow-md shadow-black rounded-md object-fill`}
                 onCanPlay={() => {
                   setIsVideoLoaded(true);
