@@ -1,7 +1,7 @@
 export const fullstack = [
   {
     title: "Car-Dealership",
-    video: "/fullstack/car-dealership.mp4",
+    video: "https://cdn57374644.blazingcdn.net/fullstack/car-dealership.mp4",
 
     features: [
       "Secure Messaging: Enables negotiation and chat with dealers.",
@@ -22,7 +22,7 @@ export const fullstack = [
   },
   {
     title: "Note-Hub",
-    video: "/fullstack/notion.mp4",
+    video: "https://cdn57374644.blazingcdn.net/fullstack/notion.mp4",
 
     features: [
       "Real-Time Collaboration: Instant updates for seamless teamwork.",
@@ -43,7 +43,7 @@ export const fullstack = [
   },
   {
     title: "Stay-Finder",
-    video: "/fullstack/airbnb.mp4",
+    video: "https://cdn57374644.blazingcdn.net/fullstack/airbnb.mp4",
 
     features: [
       "Seamless User Experience: Effortlessly list properties, book, manage, and view trips.",
@@ -63,7 +63,7 @@ export const fullstack = [
   },
   {
     title: "Chat-App",
-    video: "/fullstack/chat-app-mern.mp4",
+    video: "https://cdn57374644.blazingcdn.net/fullstack/chat-app-mern.mp4",
 
     features: [
       "Enables instant communication with message delivery, typing indicators, and read receipts.",
@@ -86,7 +86,7 @@ export const fullstack = [
 export const frontend = [
   {
     name: "Parallax-Scrolling",
-    video: "/frontend/parallax-scroll.mp4",
+    video: "https://cdn57374644.blazingcdn.net/frontend/parallax-scroll.mp4",
     description:
       "A captivating parallax website crafted with a fusion of cutting-edge technologies and classic web development prowess.",
     link: "https://priyanshu1112.github.io/mountains/",
@@ -94,7 +94,7 @@ export const frontend = [
   },
   {
     name: "Nft Website",
-    video: "/frontend/nft.mp4",
+    video: "https://cdn57374644.blazingcdn.netnpm ru/frontend/nft.mp4",
     description:
       "A captivating website for NFTs, creatively built using cutting-edge animations using HTML, CSS, and GSAP with ScrollTrigger.",
     link: "https://priyanshu1112.github.io/skyDog/",
@@ -102,7 +102,7 @@ export const frontend = [
   },
   {
     name: "Minimal-Goods",
-    video: "/frontend/minimal-goods.mp4",
+    video: "https://cdn57374644.blazingcdn.net/frontend/minimal-goods.mp4",
     description:
       "A captivating website featuring cutting-edge animations, expertly crafted with HTML, CSS, and GSAP alongside ScrollTrigger.",
     link: "https://priyanshu1112.github.io/minimalGoods/",
