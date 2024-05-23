@@ -94,7 +94,7 @@ export const frontend = [
   },
   {
     name: "Nft Website",
-    video: "https://cdn57374644.blazingcdn.netnpm ru/frontend/nft.mp4",
+    video: "https://cdn57374644.blazingcdn.net/frontend/nft.mp4",
     description:
       "A captivating website for NFTs, creatively built using cutting-edge animations using HTML, CSS, and GSAP with ScrollTrigger.",
     link: "https://priyanshu1112.github.io/skyDog/",
