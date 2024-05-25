@@ -13,6 +13,7 @@ function Home() {
   const { homeRef } = useElementRef();
   const { setIsHovered } = useHover();
   const [isTouch, setIsTouch] = useState(null);
+  const [isImageLoaded, setIsImageLoaded] = useState(false);
 
   useGSAP(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -160,11 +161,19 @@ function Home() {
           </div>
         </div>
         <div className=" w-[80%] mx-auto md:w-[50vw] p-[1vmin] h-full relative">
+          {!isImageLoaded && (
+            <div className="h-full w-full rounded-md sm:rounded-none border-b md:border-none bg-[#050702]"></div>
+          )}
           <img
-          fetchPriority="high"
+            fetchPriority="high"
+            onLoad={() => {
+              setIsImageLoaded(true);
+            }}
             src="/portfolio.jpg"
             alt="img"
-            className="h-full w-full rounded-md sm:rounded-none border-b md:border-none"
+            className={`h-full w-full rounded-md sm:rounded-none border-b md:border-none ${
+              isImageLoaded ? "block" : "hidden"
+            } `}
           />
           {/* tablet and below */}
           <div
