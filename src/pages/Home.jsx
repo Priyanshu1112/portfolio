@@ -161,7 +161,8 @@ function Home() {
         </div>
         <div className=" w-[80%] mx-auto md:w-[50vw] p-[1vmin] h-full relative">
           <img
-            src="https://images.unsplash.com/photo-1514790193030-c89d266d5a9d"
+          fetchPriority="high"
+            src="/portfolio.jpg"
             alt="img"
             className="h-full w-full rounded-md sm:rounded-none border-b md:border-none"
           />
