@@ -47,9 +47,9 @@ const ProjectCards = ({ projects }) => {
             onMouseLeave={() => setIsHovered(false)}
             key={index}
             className="p-3 translate-y-[100px] opacity-0 flex flex-col 
-            justify-between dark:bg-slate-950 bg-inherit 
+            justify-between dark:bg-slate-950 bg-inherit
             lg:w-[30%] sm:w-[45%] dark:text-white dark:shadow-white 
-            dark:shadow rounded-lg relative group/card "
+            dark:shadow transition-all duration-500 rounded-lg relative group/card "
           >
             <h3 className="mb-3 text-center lg:text-start">{project.name}</h3>
             <div className="flex flex-col justify-between flex-1 items-center gap-3">

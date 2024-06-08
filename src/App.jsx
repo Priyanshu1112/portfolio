@@ -136,7 +136,7 @@ const App = () => {
         ref={containerRef}
         id="containerElement"
         style={{ scrollBehavior: "smooth" }}
-        className="dark:bg-gray-950 text-gray-950 dark:text-white overflow-hidden scroll-smooth overflow-y-scroll h-screen"
+        className="dark:bg-gray-950 text-gray-950 dark:text-white transition-all duration-500 overflow-hidden scroll-smooth overflow-y-scroll h-screen"
       >
         <Social />
         {/* CURSORS */}
