@@ -135,14 +135,14 @@ function Contact() {
             className="flex-1 flex flex-col gap-3 text-center md:text-start"
           >
             <p
-              className="text-2xl contact-text translate-y-[100px] 
-            sm:-translate-x-[100px] opacity-0 lg:text-3xl mb-2 md:px-10"
+              className="text-2xl contact-text sm:translate-y-[0px] translate-y-[100px] 
+            sm:-translate-x-[100px]  opacity-0 lg:text-3xl mb-2 md:px-10"
             >
               Connect or Feedback
             </p>
             <span>
               <Link
-                className="contact-text translate-y-[100px] sm:-translate-x-[100px] 
+                className="contact-text sm:translate-y-[0px] translate-y-[100px] sm:-translate-x-[100px] 
               opacity-0 md:px-10"
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
@@ -156,7 +156,7 @@ function Contact() {
             </span>
             <span>
               <Link
-                className="contact-text translate-y-[100px] sm:-translate-x-[100px] 
+                className="contact-text sm:translate-y-[0px] translate-y-[100px] sm:-translate-x-[100px] 
               opacity-0 md:px-10"
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
@@ -166,7 +166,7 @@ function Contact() {
               </Link>
             </span>
             <p
-              className="contact-text translate-y-[100px] sm:-translate-x-[100px] 
+              className="contact-text sm:translate-y-[0px] translate-y-[100px] sm:-translate-x-[100px] 
             opacity-0 px-10"
             >
               Your feedback is invaluable to me, and I welcome any insights you
@@ -188,7 +188,7 @@ function Contact() {
                   onMouseEnter={() => setIsHovered(true)}
                   onMouseLeave={() => setIsHovered(false)}
                   type="text"
-                  className={`contact-form w-full translate-y-[100px] ${
+                  className={`contact-form w-full sm:translate-y-[0px] translate-y-[100px] ${
                     error.from_name
                       ? "border-red-400 "
                       : "border-black text-inherit"
@@ -207,7 +207,7 @@ function Contact() {
                   onMouseEnter={() => setIsHovered(true)}
                   onMouseLeave={() => setIsHovered(false)}
                   type="email"
-                  className={`contact-form w-full translate-y-[100px] ${
+                  className={`contact-form w-full sm:translate-y-[0px] translate-y-[100px] ${
                     error.email_id
                       ? "border-red-400 "
                       : "border-black text-inherit"
@@ -232,7 +232,7 @@ function Contact() {
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
                 placeholder="Message"
-                className={`contact-form translate-y-[100px] ${
+                className={`contact-form sm:translate-y-[0px] translate-y-[100px] ${
                   error.message
                     ? "border-red-400 "
                     : "border-black text-inherit"
@@ -253,7 +253,7 @@ function Contact() {
                 onClick={sendMessage}
                 role="button"
                 disabled={sendingMessage}
-                className={`dark:bg-inherit relative z-20 border-2 contact-form translate-y-[100px] 
+                className={`dark:bg-inherit relative z-20 border-2 contact-form sm:translate-y-[0px] translate-y-[100px] 
                  sm:translate-x-[100px] opacity-0 dark:border-white border-black ${
                    !isTouch &&
                    "dark:group-hover/button:border-black group-hover/button:border-white"

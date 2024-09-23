@@ -10,9 +10,9 @@ const Container = () => {
       <Projects />
       <About />
       <Contact />
-      <div className="bg-black text-white h-[12vh] sm:h-[10vh] pt-4 border-t border-white text-center">
+      {/* <div className="bg-black text-white h-[12vh] sm:h-[10vh] pt-4 border-t border-white text-center">
         Made by Priyanshu
-      </div>
+      </div> */}
     </div>
   );
 };

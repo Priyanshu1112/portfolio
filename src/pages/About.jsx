@@ -29,7 +29,7 @@ function About() {
         <div className=" flex flex-col sm:flex-row items-center sm:items-start gap-2 mb-8 sm:mb-12 lg:mb-16  pt-8 sm:pt-12 lg:pt-16 w-[90%] mx-auto ">
           <span
             className="left-about flex-[.45] text-2xl hidden sm:block
-          opacity-0 translate-y-[100px] sm:-translate-x-[100px]  font-semibold"
+          opacity-0 translate-y-[100px] sm:translate-y-0 sm:-translate-x-[100px]  font-semibold"
           >
             About My self
           </span>
@@ -44,7 +44,7 @@ function About() {
                 if (index > 5) return;
                 return (
                   <li
-                    className="about opacity-0 translate-y-[100px] text-sm md:text-base  sm:translate-x-[100px] mb-2"
+                    className="about opacity-0 translate-y-[100px] sm:translate-y-[0px] text-sm md:text-base  sm:translate-x-[100px] mb-2"
                     key={index}
                   >
                     <span className="font-semibold">{values[0]}</span> :{" "}
@@ -62,7 +62,7 @@ function About() {
         >
           <span
             className="left-about flex-[.45]   text-2xl
-          opacity-0 translate-y-[100px] sm:-translate-x-[100px]  font-semibold"
+          opacity-0 translate-y-[100px] sm:translate-y-[0px] sm:-translate-x-[100px]  font-semibold"
           >
             Skills
           </span>
@@ -75,7 +75,7 @@ function About() {
               {Object.entries(skills).map(([key, url], index) => (
                 <li
                   key={index}
-                  className="skills opacity-0 rounded-md translate-y-[100px]  sm:translate-x-[100px] text-center 
+                  className="skills opacity-0 rounded-md translate-y-[100px] sm:translate-y-[0px]  sm:translate-x-[100px] text-center 
                   shadow  group/skill transition-all duration-300 sm:text-start relative"
                 >
                   <div className="w-20 p-1 rounded-t-sm mx-auto bg-inherit dark:bg-slate-100">
@@ -126,7 +126,7 @@ function About() {
         <div className=" flex flex-col items-center sm:items-start sm:flex-row border-t-2 gap-2 pt-8 sm:pt-12 lg:pt-16 w-[90%] mx-auto ">
           <span
             className="left-about flex-[.45]  text-2xl 
-          opacity-0 translate-y-[100px] sm:-translate-x-[100px] font-semibold"
+          opacity-0 translate-y-[100px] sm:-translate-x-[100px] sm:translate-y-[0px] font-semibold"
           >
             Education
           </span>
@@ -138,7 +138,7 @@ function About() {
             {education.map((data, index) => (
               <div
                 key={index}
-                className="education opacity-0 translate-y-[100px]  sm:translate-x-[100px]
+                className="education opacity-0 translate-y-[100px] sm:translate-y-[0px]  sm:translate-x-[100px]
                  mb-5 text-center sm:text-start"
               >
                 <p className="font-semibold">{data.institute}</p>
