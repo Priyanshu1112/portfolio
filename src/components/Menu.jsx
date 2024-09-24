@@ -6,6 +6,7 @@ function Menu({ open, setOpen }) {
   const { setIsHovered } = useHover();
   const menuItems = {
     home: "home",
+    experience: "experience",
     projects: "projects",
     about: "about",
     contact: "contact",

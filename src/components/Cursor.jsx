@@ -21,12 +21,12 @@ export function Cursor({ position, touch }) {
         }}
       />
       <motion.div
-        className="cursor bg-black dark:bg-gray-200 "
+        className="cursor bg-black dark:bg-gray-200"
         style={{
           top: position2.y,
           left: position2.x,
           zIndex: "9998",
-          transition: "opacity 0.2s, transform 0.2s",
+          transition: "opacity 0.2s , transform .2s ",
           transform: isHovered
             ? "scale(5) translate(0%, 0%)"
             : "scale(1) translate(-50%, -50%)",

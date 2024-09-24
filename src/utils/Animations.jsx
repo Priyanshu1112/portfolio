@@ -6,6 +6,21 @@ const Animations = () => {
   const { isMobile, isTablet } = useDeviceSize();
 
   useGSAP(() => {
+    //experience
+    gsap.to(document.getElementById("title-experience"), {
+      width: isTablet ? "70%" : "50%",
+      opacity: 1,
+      scrollTrigger: {
+        trigger: document.getElementById("experience"),
+        scroller: document.getElementById("containerElement"),
+        // markers: true,
+        scrub: 2,
+        start: "top 60%",
+        end: "top 50%",
+      },
+    });
+
+
     //projects
     gsap.to(document.getElementById("title-project"), {
       width: isTablet ? "70%" : "50%",
@@ -29,7 +44,7 @@ const Animations = () => {
           scroller: document.getElementById("containerElement"),
           // markers: true,
           scrub: 2,
-          start: "top 85%",
+          start: "top 70%",
           end: "top 75%",
         },
       });
